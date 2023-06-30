@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}   
+
+.container {
+    width: 60%;
+    margin: 2em auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.recipe, .nav {
+    margin: 0;
+    padding: 3em;
+    background-color: #fdfdf9;
+    border: 1px solid #FCBC58;
+    border-radius: 20px;
+}
+
+h1, h2 {
+    font-family: 'Ysabeau SC', sans-serif;
+    color: #FCBC58;
+}
+
+h1 {  
+    font-size: 4em;
+    margin-bottom: 0.1em;
+}
+
+h2 {
+    margin-top: 2em;
+    margin-bottom: 0;
+    text-decoration: underline;
+    color: #F57C51;
+}
+
+ul {
+   margin-top: 1.5em;
+   list-style: none;
+}
+
+li {
+    margin: 1em;
+}
+
+a { 
+   
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #F57C51;
+}

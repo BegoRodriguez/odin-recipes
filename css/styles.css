@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap');
 
+/* Variables to change colors easily */
+:root {
+    --titles-color:#c4161c;
+    --recipe-background: rgb(255, 245, 245);
+    --text-color: black;
+}
+
+/* CSS Reset */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and containers */
 body {
+    color: var(--text-color);
     font-family: 'Raleway', sans-serif;
 }   
 
@@ -10,6 +26,15 @@ body {
     margin: 2em auto;
 }
 
+.recipe, .nav {
+    margin: 0;
+    padding: 3em;
+    background-color: var(--recipe-background);
+    border: 1px solid var(--titles-color);
+    border-radius: 20px;
+}
+
+/* Images */
 img {
     width: 80%;
     max-width: 400px;
@@ -17,33 +42,27 @@ img {
     border-radius: 20px;
 }
 
-.recipe, .nav {
-    margin: 0;
-    padding: 3em;
-    background-color: #fdfdf9;
-    border: 1px solid #FCBC58;
-    border-radius: 20px;
-}
-
+/* Headings */
 h1, h2 {
     font-family: 'Ysabeau SC', sans-serif;
-    color: #FCBC58;
+    color: var(--titles-color);
 }
 
 h1 {  
-    font-size: 4em;
-    margin-bottom: 0.1em;
+    font-size: 5em;
+    margin-bottom: 0;
 }
 
 h2 {
     margin-top: 2em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     text-decoration: underline;
-    color: #F57C51;
+    color: var(--titles-color);
 }
 
+/* Lists and links */
 ul {
-   margin-top: 1.5em;
+   margin-top: 0.5em;
    list-style: none;
 }
 
@@ -52,12 +71,11 @@ li {
 }
 
 a { 
-   
-    color:black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 a:hover{
     text-decoration: underline;
-    color: #F57C51;
+    color: var(--titles-color);
 }
